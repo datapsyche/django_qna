@@ -1,0 +1,11 @@
+{% extends "../base.html" %}
+
+{% block body %}
+    <h2> Index Page Loaded </h2>
+
+    {% for quiz in all_quiz %}
+    <div>
+        <a href="/quiz/{{ forloop.counter }}"> {{ quiz }}</a>
+    </div>
+    {% endfor %}
+{% endblock body%}

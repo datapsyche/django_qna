@@ -1,0 +1,12 @@
+{% extends "../base.html" %}
+
+{% block body %}    
+    <div class="container">
+        <h2> Here are your questions </h2>
+        {% for question in all_questions%}
+        <div>
+            <a href="/quiz/questions/{{ question.id }}/"> {{ question }}</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock body%}

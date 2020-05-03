@@ -1,0 +1,13 @@
+{% extends "../base.html" %}
+
+{% block body %}    
+    <div class="container">
+        <h2> Your Choices are </h2>
+
+        {% for choice in all_choices%}
+        <div>
+            <a> {{ choice }}</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock body%}
